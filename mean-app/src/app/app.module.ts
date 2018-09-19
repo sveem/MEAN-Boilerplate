@@ -3,12 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+// Modules
+import { AppMaterialUIModule } from './ui/material-ui.module';
+import { HeaderComponent } from './core/header/header.component';
+import { GuideComponent } from './core/guide/guide.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    GuideComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppMaterialUIModule
   ],
   providers: [],
   bootstrap: [AppComponent]
