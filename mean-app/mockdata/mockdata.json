@@ -1,0 +1,20 @@
+[{
+  "id": 1,
+  "first_name": "Alix",
+  "last_name": "Norgate",
+  "country": "Philippines",
+  "company": "Roombo"
+}, {
+  "id": 2,
+  "first_name": "Bernardine",
+  "last_name": "Picard",
+  "country": "Egypt",
+  "company": "Oodoo"
+}, {
+  "id": 3,
+  "first_name": "Adolphus",
+  "last_name": "Scutchin",
+  "country": "Brazil",
+  "company": "Innojam"
+}]
+
