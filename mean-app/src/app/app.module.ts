@@ -5,18 +5,20 @@ import { AppComponent } from './app.component';
 
 // Modules
 import { AppMaterialUIModule } from './ui/material-ui.module';
-import { HeaderComponent } from './core/header/header.component';
-import { GuideComponent } from './core/guide/guide.component';
+import { AppRoutingModule } from './shared/routing/app-routing.module';
+import { AppHomeModule } from './components/home/home.module';
+import { AppCoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    GuideComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppMaterialUIModule
+    AppMaterialUIModule,
+    AppRoutingModule,
+    AppCoreModule,
+    AppHomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
