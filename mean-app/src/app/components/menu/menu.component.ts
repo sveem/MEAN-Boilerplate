@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from '../../shared/http/menu.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
   mongoData: any;
 
-  constructor() { }
+  constructor(private menuService: MenuService) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  getMongoData(): void {
+    this.menuService.getMongoData()
+      .subscribe((data: any) => this.mongoData = data,
+      (err: any) => console.log(err));
   }
-
 }

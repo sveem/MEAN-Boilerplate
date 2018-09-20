@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../../shared/http/home.service';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   fireBaseData: any;
-  constructor() { }
+  constructor(private homeService: HomeService) { }
 
   ngOnInit() { }
 
+  getFireBaseData(): void {
+    this.homeService.getFireBaseData()
+    .subscribe((data: any) => this.fireBaseData = data,
+    (err: any) => console.log(err));
+  }
 }
+
