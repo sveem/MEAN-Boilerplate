@@ -1,3 +1,15 @@
-<div class="menu-button">
+<div class="home-button">
   <button mat-button (click)="getFireBaseData()">Fetch FireBase Data</button>
+</div>
+
+<div class="card-container" *ngIf="fireBaseData">
+  <mat-card class="example-card">
+      <mat-card-content>
+          <mat-list role="list" *ngFor="let employee of fireBaseData">
+              <mat-list-item role="listitem">Name: {{ employee.first_name }}</mat-list-item>
+              <mat-list-item role="listitem">Company: {{ employee.company }}</mat-list-item>
+              <mat-list-item role="listitem">Country: {{ employee.country }}</mat-list-item>
+          </mat-list>
+      </mat-card-content>
+  </mat-card>
 </div>

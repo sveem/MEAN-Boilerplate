@@ -1,3 +1,15 @@
 <div class="menu-button">
   <button mat-button (click)="getMongoData()">Fetch Mongo Data</button>
 </div>
+
+<div class="card-container" *ngIf="mongoData">
+  <mat-card class="example-card">
+      <mat-card-content>
+          <mat-list role="list" *ngFor="let employee of mongoData">
+              <mat-list-item role="listitem">Name: {{ employee.first_name }}</mat-list-item>
+              <mat-list-item role="listitem">Company: {{ employee.company }}</mat-list-item>
+              <mat-list-item role="listitem">Email: {{ employee.country }}</mat-list-item>
+          </mat-list>
+      </mat-card-content>
+  </mat-card>
+</div>
