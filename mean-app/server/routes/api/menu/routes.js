@@ -7,9 +7,10 @@ router.get('/mongo', asyncHandler(async (req, res) => {
 }));
 
 /*
-router.get('/mongo', asyncHandler(async (req, res) => {
-  res.json(await getMongoData());
-}));
+Uncomment to use MongoDB
+  router.get('/mongo', asyncHandler(async (req, res) => {
+    res.json(await getMongoData());
+  }));
 */
 
 module.exports = router;

@@ -1,9 +1,10 @@
+require('dotenv').config();
 const express = require ('express');
 const path = require ('path');
 const http = require ('http');
 const bodyParser = require('body-parser');
 const config  = require('./server/config/config');
-const api = require('./server/routes/api/routes')
+const api = require('./server/routes/api/routes');
 // const db = require('./server/database/mongoDB/db');
 
 const app = express();

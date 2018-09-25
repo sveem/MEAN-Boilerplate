@@ -2,18 +2,17 @@
 const mockData = require('../../../../../mockdata/mockdata');
 const { yourSchema } = require('../schema/yourSchema');
 
-const getMockData = async () => {
+const getMockDAOData = async () => {
   return mockData;  
 }
 
-const getMongoData = async () => {
+const getMongoDAOData = async () => {
   return yourSchema.find({});
 };
 
-
 module.exports = {
-  getMockData: getMockData,
-  getMongoData: getMongoData  
+  getMockDAOData: getMockDAOData,
+  getMongoDAOData: getMongoDAOData  
 }
 
 
