@@ -1,4 +1,3 @@
-// Your controller
 const { getMockDAOData, getMongoDAOData } = require('../dao/index');
 
 const getMockData = async () => {
