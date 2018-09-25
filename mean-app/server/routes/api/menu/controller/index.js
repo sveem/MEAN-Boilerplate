@@ -1,11 +1,16 @@
 // Your controller
-const { getMockData } = require('../dao/index');
+const { getMockDAOData, getMongoDAOData } = require('../dao/index');
 
-const getMockDAOData = async () => {
-  return getMockData();
+const getMockData = async () => {
+  return getMockDAOData();
+ };
+
+ const getMongoData = async () => {
+  return getMongoDAOData();
  };
 
  module.exports = {
-   getMockDAOData: getMockDAOData  
+   getMockData: getMockData,
+   getMongoData: getMongoData  
  }
  
