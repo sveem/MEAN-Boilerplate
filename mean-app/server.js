@@ -8,9 +8,10 @@ const api = require('./server/routes/api/routes');
 // const db = require('./server/database/mongoDB/db');
 
 const app = express();
-
-// db.connect()
-
+/*
+ Uncomment to use mongoDB
+ db.connect()
+*/
 // Parsers for POST data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

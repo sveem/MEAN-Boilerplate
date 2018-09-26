@@ -1,4 +1,3 @@
-// Your DAO
 const mockData = require('../../../../../mockdata/mockdata');
 const { yourSchema } = require('../schema/yourSchema');
 
