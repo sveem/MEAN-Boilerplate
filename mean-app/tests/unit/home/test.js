@@ -7,7 +7,7 @@ describe('getFireBaseMockData', function () {
         assert.equal(mockData.length, 3);
     });
 
-    it('should return -1 when the value is not present', async function () {
+    it('should return -1 if value not exists', async function () {
         const mockData = await getMockData();
         assert.equal(mockData.indexOf(mockData[4]), -1);
     });
