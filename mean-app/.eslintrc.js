@@ -5,11 +5,9 @@ module.exports = {
     node: true,
     mocha: true
   },
-
   parserOptions: {
     "ecmaVersion": 2017,
   },
-
   rules:{
     indent: ['error', 4, {
       SwitchCase: 1,
@@ -24,14 +22,12 @@ module.exports = {
         },
         MemberExpression: 1
       }],
-
       'max-len': [2, {
         code: 150,
         ignoreComments: true,
         ignoreTrailingComments: true,
         ignoreUrls: true
       }],
-      
       'semi': [2, "always"],
       'comma-style': [2, 'last'],
       'comma-dangle': [2, 'never'],
@@ -51,6 +47,7 @@ module.exports = {
       'import/no-unresolved': 0,
       'object-curly-newline': 0,
       'no-plusplus': 0,
-      'import/no-dynamic-require': 0
+      'import/no-dynamic-require': 0,
+      'no-console': 0
     }
   };
