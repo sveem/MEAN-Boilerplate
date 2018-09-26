@@ -10,8 +10,9 @@ const api = require('./server/routes/api/routes');
 const app = express();
 /*
  Uncomment to use mongoDB
- db.connect()
+    db.connect()
 */
+
 // Parsers for POST data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

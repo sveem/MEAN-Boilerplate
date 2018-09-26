@@ -1,15 +1,14 @@
 const { getMockDAOData, getFireBaseDAOData } = require('../dao/index');
 
 const getMockData = async () => {
-  return getMockDAOData();
- };
+    return getMockDAOData();
+};
 
- const getFireBaseData = async () => {
-  return getFireBaseDAOData();
- };
+const getFireBaseData = async () => {
+    return getFireBaseDAOData();
+};
 
- module.exports = {
-   getMockData: getMockData,
-   getFireBaseData: getFireBaseData  
- }
- 
+module.exports = {
+    getMockData: getMockData,
+    getFireBaseData: getFireBaseData
+};
