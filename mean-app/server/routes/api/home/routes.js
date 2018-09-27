@@ -3,7 +3,7 @@ const { getMockData, getFireBaseData } = require('./controller/index');
 const asyncHandler = require('../../../utils/asyncHandler');
 
 router.get('/firebase', asyncHandler(async (req, res) => {
-  res.json(await getMockData());
+    res.json(await getMockData());
 }));
 
 /*

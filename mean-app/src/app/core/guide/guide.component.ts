@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./guide.component.css']
 })
 export class GuideComponent implements OnInit {
-
+title: String = 'MEAN Stack Boilerplate';
   constructor() { }
 
   ngOnInit() { }
