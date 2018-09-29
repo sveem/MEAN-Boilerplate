@@ -2,6 +2,8 @@
 
 MEAN stack app boilerplate - MongoDB, Express, Angular and Node.js
 
+!['MEAN'](/assets/MEAN.jpg)
+
 Inspired from [Architecture in Angular Projects](https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7) and [Best Practices for Express App Structure](https://www.terlici.com/2014/08/25/best-practices-express-structure.html)
 
 ## Frontend
