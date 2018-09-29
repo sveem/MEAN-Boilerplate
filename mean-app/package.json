@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng build && node server",
+    "build-prod": "ng build --prod && node server",
     "serve": "ng serve",
     "test": "ng test",
     "unitTest": "mocha tests/**/*test.js",
