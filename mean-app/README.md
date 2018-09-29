@@ -1,6 +1,23 @@
-# MeanApp
+# MEAN Stack Boilerplate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+MEAN stack app boilerplate - MongoDB, Express, Angular and Node.js
+
+## Frontend
+- Angular - TypeScript-based open-source front-end web application platform led by Angular Team at Google
+- Angular Material Design - Collection of Google's Material Design components 
+
+## Backend
+- Node.js - Open-source, cross-platform JavaScript run-time environment built on Chrome's V8
+- Express - Minimal and flexible Node.js web application framework
+
+## Databases
+- MongoDB with Mongoose - NoSQL free and open-source, cross-platform document-oriented database
+- Firebase - Mobile and web application development platform supported by Google
+
+## Tests
+- Mocha - Feature-rich JavaScript test framework running on Node.js
+- Karma - Test runner for JavaScript that runs on Node.js. It's very well suited to testing Angular projects.
+- Jasmine - Testing framework that supports Behaviour Driven Development
 
 ## Development server
 
